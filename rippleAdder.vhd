@@ -1,7 +1,7 @@
 library IEEE;
 use IEEE.STD_LOGIC_1164.ALL;
 
-entity fulladder is
+entity rippleAdder is
 	Port ( 
 		a0  : in STD_LOGIC;
 		a1  : in STD_LOGIC;
@@ -57,9 +57,9 @@ entity fulladder is
 		s15 : out STD_LOGIC_VECTOR(15 downto 0);
 		
 		CarryOut : out STD_LOGIC_VECTOR(15 downto 0));
-end fulladder;
+end rippleAdder;
 
-architecture Behavioral of fulladder is
+architecture Behavioral of rippleAdder is
 	
 	component fulladder 
 		Port ( 
